@@ -1,0 +1,12 @@
+plugins {
+    id 'application'
+}
+
+dependencies {
+    implementation project(':services')
+}
+
+application {
+    mainModule = 'org.example.client'
+    mainClass = 'org.example.client.Main'
+}

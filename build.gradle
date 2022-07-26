@@ -1,0 +1,16 @@
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+tasks.register('rc') {
+    dependsOn ':client:run'
+}
