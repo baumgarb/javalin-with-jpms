@@ -3,6 +3,7 @@ module org.example.api {
     requires io.javalin;
     requires com.fasterxml.jackson.databind;
     requires org.slf4j.simple;
+    requires kotlin.stdlib;
 
     uses org.example.services.api.PersonReader;
 }
